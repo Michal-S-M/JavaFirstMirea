@@ -3,7 +3,7 @@ package ru.mirea.test;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-class Main extends JFrame
+class Task11 extends JFrame
 {
     static double rightAnswer=12;
     static int nomberOfFalseAnswer=0;
@@ -11,7 +11,7 @@ class Main extends JFrame
     JTextField jta1 = new JTextField(10);
     JButton button = new JButton("Ввод ответа");
     Font fnt = new Font("Times new roman",Font.BOLD,20);
-    Main()
+    Task11()
     {
         super("Example");
         setLayout(new FlowLayout());
@@ -47,6 +47,6 @@ class Main extends JFrame
     }
     public static void main(String[]args)
     {
-        new Main();
+        new Task11();
     }
 }
