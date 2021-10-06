@@ -8,7 +8,7 @@ public abstract class Dish {
 
     public String getColor() { return color; }
     public String getType() { return type; }
-    public void getSalary(double salary) {
+    public void setSalary(double salary) {
         this.salary=salary;
     }
 
