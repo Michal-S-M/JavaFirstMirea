@@ -13,6 +13,9 @@ public class Main6 {
             System.out.println(i+"; ");
             recursion(n, i+1);
         }
+        else {
+            recursion(n, i+1);
+        }
     }
     public static void main(String[] args) {
         System.out.println("введите число: ");
