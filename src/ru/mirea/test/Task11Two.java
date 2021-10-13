@@ -14,14 +14,14 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 public class Task11Two extends JFrame {
-    public static void WorstestTaskEver() {
+    Task11Two() {
         JFrame frame = new JFrame("Test frame");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        JTextArea jta1 = new JTextArea(10,25);
-        JButton button = new JButton("Add some Text");
+        JTextArea jta1 = new JTextArea(10, 25);
         Font font = new Font("Verdana", Font.PLAIN, 11);
-
+        frame.add(jta1);
+        jta1.setForeground(Color.PINK);
+        setVisible(true);
         JMenuBar menuBar = new JMenuBar();
 
         JMenu fileMenu = new JMenu("File");
@@ -34,15 +34,30 @@ public class Task11Two extends JFrame {
         JMenuItem ShriftOne = new JMenuItem("Шрифт 1");
         ShriftOne.setFont(font);
         newMenuShrift.add(ShriftOne);
+        ShriftOne.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                //jta1.setFont(Font.SERIF);
+            }
+        });
 
 
         JMenuItem ShriftTwo = new JMenuItem("Шрифт 2");
         ShriftTwo.setFont(font);
         newMenuShrift.add(ShriftTwo);
+        ShriftTwo.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                jta1.setForeground(Color.yellow);
+            }
+        });
 
         JMenuItem ShriftThree = new JMenuItem("Шрифт 3");
         ShriftThree.setFont(font);
         newMenuShrift.add(ShriftThree);
+        ShriftThree.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                jta1.setForeground(Color.BLACK);
+            }
+        });
 
         JMenu newMenuColor = new JMenu("цвета");
         newMenuColor.setFont(font);
@@ -51,15 +66,30 @@ public class Task11Two extends JFrame {
         JMenuItem ColorOne = new JMenuItem("цвет 1");
         ColorOne.setFont(font);
         newMenuColor.add(ColorOne);
+        ColorOne.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                jta1.setForeground(Color.BLACK);
+            }
+        });
 
 
         JMenuItem ColorTwo = new JMenuItem("цвет 2");
         ColorTwo.setFont(font);
         newMenuColor.add(ColorTwo);
+        ColorTwo.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                jta1.setForeground(Color.yellow);
+            }
+        });
 
         JMenuItem ColorThree = new JMenuItem("цвет 3");
         ColorThree.setFont(font);
         newMenuColor.add(ColorThree);
+        ColorThree.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                jta1.setForeground(Color.PINK);
+            }
+        });
         /*
         JMenuItem openItem = new JMenuItem("Open");
         openItem.setFont(font);
@@ -96,11 +126,6 @@ public class Task11Two extends JFrame {
     }
 
     public static void main(String[] args) {
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                JFrame.setDefaultLookAndFeelDecorated(true);
-                WorstestTaskEver();
-            }
-        });
+        new Task11Two();
     }
 }
