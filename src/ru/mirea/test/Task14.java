@@ -7,7 +7,6 @@ import java.util.Stack;
 
 public class Task14 extends JFrame {
     JLabel lbl = new JLabel("начните игру");
-    JLabel lbl2 = new JLabel("test");
     JTextField jta = new JTextField(10);
     JTextField jta2 = new JTextField(10);
     Font fnt = new Font("Times new roman",Font.BOLD,20);
@@ -24,7 +23,6 @@ public class Task14 extends JFrame {
         add(jta);
         add(jta2);
         add(button);
-        add(lbl2, BorderLayout.SOUTH);
         jta.setForeground(Color.BLACK);
         jta.setFont(fnt);
         jta2.setForeground(Color.BLACK);
@@ -49,7 +47,6 @@ public class Task14 extends JFrame {
                         double first = f.pop();
                         double second = s.pop();
                         if (((first<second)||((second==0)&&(first==9)))&&(!((second==9)&&(first==0)))) a++;
-                        lbl2.setText("f = "+first);
                     }
                     /*First_player = Double.parseDouble(jta.getText().trim());
                     Second_player = Double.parseDouble(jta2.getText().trim());
