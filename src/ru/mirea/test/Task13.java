@@ -10,9 +10,10 @@ public class Task13 {
         towns.add("Вашингтон");
         towns.add("Лондон");
         towns.add("Омск");
-        towns.add(1, "Детроит"); // добавляем элемент по индексу 1
-        System.out.println(towns.get(1));// получаем 2-й объект
-        towns.set(1, "Мурманск"); // установка нового значения для 2-го объекта
+        towns.add(2, "Детроит");
+        System.out.println(towns.get(2));
+        towns.set(2, "Мурманск");
+        System.out.println(towns.get(2));
         System.out.printf("В списке %d элементов \n", towns.size());
         for (String state : towns) {
             System.out.println(state);
@@ -28,12 +29,11 @@ public class Task13 {
         }
         System.out.println("\n <<<<<<<<<<< \n");
         LinkedList<String> states = new LinkedList<String>();
-// добавим в список ряд элементов
         states.add("Германия");
         states.add("Франция");
-        states.addLast("Великобритания"); // добавляем на последнее место
-        states.addFirst("Испания"); // добавляем на первое место
-        states.add(1, "Италия"); // добавляем элемент по индексу 1
+        states.addLast("Великобритания");
+        states.addFirst("Испания");
+        states.add(1, "Италия");
         System.out.printf("В списке %d элементов \n", states.size());
         System.out.println(states.get(1));
         states.set(1, "Дания");
