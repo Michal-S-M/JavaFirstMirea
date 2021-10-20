@@ -19,31 +19,20 @@ class Task11three extends JFrame
             public void mouseExited(MouseEvent a){}
             public void mouseClicked(MouseEvent a)
             {
-                lbl2.setText("X="+a.getX()+" Y="+a.getY()+" 200-a.getX(): "+(200-a.getX()));
+                //lbl2.setText("X="+a.getX()+" Y="+a.getY()+" 200-a.getX(): "+(200-a.getX()));
             }
             public void mouseEntered(MouseEvent a) {
-/*
-                if((a.getY()>(200-a.getX()))&&(a.getY()>a.getX()))
-                    lbl2.setText("Вы посетили южные земли, мой лорд!");
-                else if ((a.getY()>(200-a.getX()))&&(a.getY()<a.getX()))
-                    lbl2.setText("Вы посетили восточные земли, мой лорд!");
-                else if ((a.getY()<(200-a.getX()))&&(a.getY()<a.getX()))
-                    lbl2.setText("Вы посетили северные земли, мой лорд!");
-                else if ((a.getY()<(200-a.getX()))&&(a.getY()>a.getX()))
-                    lbl2.setText("Вы посетили западыне земли, мой лорд!");
- */
+                if((a.getY()>(400-a.getX()))&&(a.getY()>a.getX()))
+                    lbl2.setText("Вы находитесь на юге");
+                else if ((a.getY()>(400-a.getX()))&&(a.getY()<a.getX()))
+                    lbl2.setText("Вы находитесь на востоке");
+                else if ((a.getY()<(400-a.getX()))&&(a.getY()<a.getX()))
+                    lbl2.setText("Вы находитесь на севере");
+                else if ((a.getY()<(400-a.getX()))&&(a.getY()>a.getX()))
+                    lbl2.setText("Вы находитесь на западе");
 
             }
-            public void mouseReleased(MouseEvent a) {
-                if((a.getY()>(400-a.getX()))&&(a.getY()>a.getX()))
-                    lbl.setText("Вы посетили южные земли, мой лорд!");
-                else if ((a.getY()>(400-a.getX()))&&(a.getY()<a.getX()))
-                    lbl.setText("Вы посетили восточные земли, мой лорд!");
-                else if ((a.getY()<(400-a.getX()))&&(a.getY()<a.getX()))
-                    lbl.setText("Вы посетили северные земли, мой лорд!");
-                else if ((a.getY()<(400-a.getX()))&&(a.getY()>a.getX()))
-                    lbl.setText("Вы посетили западыне земли, мой лорд!");
-            }
+            public void mouseReleased(MouseEvent a) {}
             public void mousePressed(MouseEvent a) {}
         });
     }

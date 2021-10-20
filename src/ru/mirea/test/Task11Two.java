@@ -46,7 +46,7 @@ public class Task11Two extends JFrame {
         newMenuShrift.add(ShriftTwo);
         ShriftTwo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                jta1.setForeground(Color.yellow);
+                //jta1.setForeground(Color.yellow);
             }
         });
 
@@ -55,7 +55,7 @@ public class Task11Two extends JFrame {
         newMenuShrift.add(ShriftThree);
         ShriftThree.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                jta1.setForeground(Color.BLACK);
+                //jta1.setForeground(Color.BLACK);
             }
         });
 
