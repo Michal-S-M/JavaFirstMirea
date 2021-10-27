@@ -7,33 +7,33 @@ public class Task133<T> {
     private int pointer = 0;
 
 
-    public void add(T item) {
+    public void addT(T item) {
         if(pointer == array.length-1)
-            resize(array.length*2);
+            resizeT(array.length*2);
         array[pointer++] = item;
     }
 
 
-    public T get(int index) {
+    public T getT(int index) {
         return (T) array[index];
     }
 
-    public void remove(int index) {
+    public void removeT(int index) {
         for (int i = index; i<pointer; i++)
             array[i] = array[i+1];
         array[pointer] = null;
         pointer--;
         if (array.length > size && pointer < array.length / cut)
-            resize(array.length/2);
+            resizeT(array.length/2);
     }
 
-    private void resize(int newLength) {
+    private void resizeT(int newLength) {
         Object[] newArray = new Object[newLength];
         System.arraycopy(array, 0, newArray, 0, pointer);
         array = newArray;
     }
 
-    public int size() {
+    public int sizeT() {
         return pointer;
     }
 }

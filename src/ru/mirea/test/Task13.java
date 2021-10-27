@@ -53,9 +53,12 @@ public class Task13 {
         states.removeLast();
 
 
-        Task133<String> abc = new Task133<String>();
-        abc.add("1");
-        abc.add("2");
-        abc.add("3");
+        Task133<String> abcd = new Task133<String>();
+        abcd.addT("1");
+        abcd.addT("2");
+        abcd.addT("3");
+
+        System.out.println(abcd.getT(1));
+        System.out.println(abcd.sizeT());
     }
 }
