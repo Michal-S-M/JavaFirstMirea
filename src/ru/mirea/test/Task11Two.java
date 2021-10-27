@@ -19,6 +19,8 @@ public class Task11Two extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JTextArea jta1 = new JTextArea(10, 25);
         Font font = new Font("Verdana", Font.PLAIN, 11);
+        Font font2 = new Font("ROMAN_BASELINE", Font.ITALIC, 11);
+        Font font3 = new Font("Verdana", Font.BOLD, 11);
         frame.add(jta1);
         jta1.setForeground(Color.PINK);
         setVisible(true);
@@ -26,6 +28,7 @@ public class Task11Two extends JFrame {
 
         JMenu fileMenu = new JMenu("File");
         fileMenu.setFont(font);
+
 
         JMenu newMenuShrift = new JMenu("Шрифты");
         newMenuShrift.setFont(font);
@@ -36,7 +39,7 @@ public class Task11Two extends JFrame {
         newMenuShrift.add(ShriftOne);
         ShriftOne.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //jta1.setFont(Font.SERIF);
+                jta1.setFont(font);
             }
         });
 
@@ -46,7 +49,7 @@ public class Task11Two extends JFrame {
         newMenuShrift.add(ShriftTwo);
         ShriftTwo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //jta1.setForeground(Color.yellow);
+                jta1.setFont(font2);
             }
         });
 
@@ -55,7 +58,7 @@ public class Task11Two extends JFrame {
         newMenuShrift.add(ShriftThree);
         ShriftThree.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //jta1.setForeground(Color.BLACK);
+                jta1.setFont(font3);
             }
         });
 

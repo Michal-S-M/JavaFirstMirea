@@ -51,5 +51,11 @@ public class Task13 {
         states.remove("Германия");
         states.removeFirst();
         states.removeLast();
+
+
+        Task133<String> abc = new Task133<String>();
+        abc.add("1");
+        abc.add("2");
+        abc.add("3");
     }
 }
