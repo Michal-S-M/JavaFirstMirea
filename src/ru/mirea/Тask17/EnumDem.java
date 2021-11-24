@@ -10,23 +10,14 @@ enum Doctor {
         return price;
     }
 }
-
 class EnumDem {
     public static void main(String[] args) {
-        Doctor ap; // объявляется переменная ар перечислимого типа Apple
-
-        ap = Doctor.ENT; //  переменной ар присваивается значение RedDel
-
-        // вывести значение перечислимого типа
+        Doctor ap;
+        ap = Doctor.ENT;
         System.out.println("Значение ap: " + ap);
         System.out.println();
-
         ap = Doctor.dental;
-
-        // сравнить два значения перечислимого типа
         if (ap == Doctor.dental) System.out.println("Переменная ар содержит GoldenDel.\n");
-
-        // применить перечисление для управления оператором switch
         switch (ap) {
             case ENT:
                 System.out.println("вы записаны к ЛОРу");

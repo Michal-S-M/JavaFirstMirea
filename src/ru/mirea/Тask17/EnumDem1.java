@@ -1,5 +1,5 @@
 package ru.mirea.Тask17;
-
+/*
 class EnumDem1 {
 public static void main(String[] args) {
         Doctor ap;
@@ -26,3 +26,4 @@ public static void main(String[] args) {
         System.out.println("вы записаны к " + ap + ", услуги стоят: "+ ap.getPrice());
         }
 }
+*/
