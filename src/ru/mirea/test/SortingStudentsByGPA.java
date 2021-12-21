@@ -1,5 +1,5 @@
 package ru.mirea.test;
-
+/*
 public class SortingStudentsByGPA implements Comparator {
     boolean flag;
     SortingStudentsByGPA(){
@@ -34,3 +34,4 @@ public class SortingStudentsByGPA implements Comparator {
         }
     }
 }
+*/

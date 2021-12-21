@@ -1,15 +1,21 @@
 package ru.mirea.test;
-
+/*
 public class Student {
-    private int Mark;
-    //private String Name;
+    private int mark;
+    private string id;
     public int getMark(){
-        return this.Mark;
+        return this.mark;
     }
-    //public String getName(){
-    //    return this.Name;
-   // }
     public void setMark(int Mark){
-        this.Mark=Mark;
+        this.mark=mark;
     }
+    Student(String id; int mark) {
+        this.id=id;
+
+
+    }
+
+
 }
+
+*/
