@@ -8,9 +8,9 @@ public class Task7 {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
         int RightA=a;
-        System.out.println("проверка работы метода: \n");
+        System.out.println("проверка работы метода: ");
         for (int i = 1; i < a; i++) {
-            System.out.println("шаг: "+i+"-ый; число: "+ RightA+" * "+1+"="+RightA*i+"\n");
+            System.out.println("шаг: "+i+"-ый; число: "+ RightA+" * "+1+"="+RightA*i);
             RightA=RightA*i;
         }
         System.out.println("искомое число: "+ RightA);

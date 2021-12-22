@@ -17,7 +17,7 @@ class EnumDem {
         System.out.println("Значение ap: " + ap);
         System.out.println();
         ap = Doctor.dental;
-        if (ap == Doctor.dental) System.out.println("Переменная ар содержит GoldenDel.\n");
+        if (ap == Doctor.dental) System.out.println("Переменная ар содержит dental.\n");
         switch (ap) {
             case ENT:
                 System.out.println("вы записаны к ЛОРу");

@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 public class Time {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Calendar calendar = new GregorianCalendar(2017, 0 , 25);
+        Calendar calendar = new GregorianCalendar(2021, 0 , 25);
         calendar.set(Calendar.YEAR, 2021);
         System.out.println("введите требуемый месяц: ");
         int d = in.nextInt();

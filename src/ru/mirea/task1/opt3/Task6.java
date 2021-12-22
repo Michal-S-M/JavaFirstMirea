@@ -8,7 +8,7 @@ public class Task6 {
         for (int i = 0; i < 10; i++) {
             a = Math.random() * 100;
             arr[i] = (int) a;
-            System.out.println(i + "-ый эллемент массива: " + arr[i] + "\n");
+            System.out.println(i + "-ый эллемент массива: " + arr[i]);
         }
 
         for (int i = 0; i < 10; i++) {
@@ -22,7 +22,7 @@ public class Task6 {
         }
 
         for (int i = 0; i < 10; i++) {
-            System.out.println(i + "-ый эллемент массива: " + arr[i] + "\n");
+            System.out.println(i + "-ый эллемент массива: " + arr[i]);
         }
     }
 }

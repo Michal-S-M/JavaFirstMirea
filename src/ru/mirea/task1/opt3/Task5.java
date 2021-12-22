@@ -8,7 +8,7 @@ public class Task5 {
             y = 1 / x;
             x++;
             a = i + 1;
-            System.out.println("число номер " + a + " равно " + y + "\n");
+            System.out.println("число номер " + a + " равно " + y);
         }
     }
 }

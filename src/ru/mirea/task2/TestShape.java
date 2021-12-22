@@ -12,7 +12,8 @@ public class TestShape {
         double num = in.nextInt();
         S1.setVolume(num);
         System.out.println("введите цвет куба: ");
-        String color = in.nextLine();
+        Scanner in1 = new Scanner(System.in);
+        String color = in1.nextLine();
         S1.setColor(color);
         System.out.println(S1);
 

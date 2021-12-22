@@ -1,4 +1,4 @@
-package ru.mirea.test;
+package ru.mirea.Task15;
 import java.util.Scanner;
 
 import java.io.*;

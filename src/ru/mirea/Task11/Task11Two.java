@@ -1,4 +1,4 @@
-package ru.mirea.test;
+package ru.mirea.Task11;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.JFrame;
 import javax.swing.JMenu;

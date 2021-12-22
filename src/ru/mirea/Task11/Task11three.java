@@ -1,4 +1,4 @@
-package ru.mirea.test;
+package ru.mirea.Task11;
 
 import java.awt.*;
 import java.awt.event.*;
