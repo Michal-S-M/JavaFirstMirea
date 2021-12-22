@@ -36,4 +36,5 @@ public class Task133<T> {
     public int sizeT() {
         return pointer;
     }
+
 }
